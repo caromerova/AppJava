@@ -1,9 +1,6 @@
 package org.example;
 
-import org.example.modelos.Local;
-import org.example.modelos.Oferta;
-import org.example.modelos.Reserva;
-import org.example.modelos.Usuario;
+import org.example.modelos.*;
 import org.example.utilidades.Util;
 
 
@@ -16,27 +13,15 @@ public class Main {
 
 
       Scanner teclado =  new  Scanner(System.in);
-      Usuario usuario = new Usuario();
+      Usuario usuario = new Usuario();//papá
+      Afiliado afiliado=new Afiliado();//hijo
+
+      //ACCEDIENDO A LOS ATRIBUTOS DE UN OBJETO
+      usuario.setNombres("1234");
+      afiliado.setNombres("ana");
 
 
-      System.out.println("Bienvenido");
-      System.out.println("recogiendo datos de usuario");
-      System.out.println("Digita tu nombre y apellido");
-      usuario.setNombres(teclado.nextLine());
-      System.out.println("digite su correo");
-      usuario.setCorreoElectronico(teclado.nextLine());
 
-      Oferta oferta = new Oferta();
-      System.out.println("Digite la fecha de inicio");
-      oferta.setFechaInicio(teclado.nextLine());
-      System.out.println("Digite la fecha final");
-      oferta.setFechaFin(teclado.nextLine());
-
-      Local local = new Local();
-      System.out.println("ingrese su Nit");
-      local.setNit(teclado.nextLine());
-
-  //seguir creando main 
 
 
 

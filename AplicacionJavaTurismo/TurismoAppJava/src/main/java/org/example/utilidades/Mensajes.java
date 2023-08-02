@@ -27,6 +27,10 @@ public enum Mensajes {
 
     NOMBRE_EMPRESA_DIGITOS("Señor Usuario, el nombre de la empresa no puede sobrepasar los 30 caracteres"),
 
+    VALOR_MEMBRESIA(" EL valor de la membresia no puede ser menor a $20.000 ni puede ser mayor a $150.000"),
+
+    CEDULA_REFERIDO(" La cedula del referido solo puede tener numeros"),
+
     RESERVA_MENOR ("La cantidad de personas por reserva debe ser menor a 4 personas");
     ;
 

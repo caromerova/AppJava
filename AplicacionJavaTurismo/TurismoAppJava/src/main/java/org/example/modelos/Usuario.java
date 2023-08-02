@@ -2,7 +2,7 @@ package org.example.modelos;
 
 import org.example.validaciones.UsuarioValidacion;
 
-public class Usuario {
+public abstract class Usuario {
 
     //ATTRIBUTES = VARIABLES = DATES
 
@@ -18,6 +18,8 @@ public class Usuario {
     private  Integer ubicacion ;
     private  String correoElectronico;
 
+    private final Integer costoAnual=2000000;
+
     private UsuarioValidacion validacion = new UsuarioValidacion();
 
     //SPECIAL METHODS
@@ -31,6 +33,10 @@ public class Usuario {
         this.documento = documento;
         this.ubicacion = ubicacion;
         this.correoElectronico = correoElectronico;
+    }
+
+    public Integer getCostoAnual() {
+        return costoAnual;
     }
 
     public Integer getId() {
@@ -106,4 +112,8 @@ public class Usuario {
                 ", validacion=" + validacion +
                 '}';
     }
+    //METODOS ORDINARIOS
+    public abstract Double calcularAnualidad();
+
+    public abstract Double noAfiliado();
 }
